@@ -4,25 +4,51 @@
     text-decoration: none;
   }
 
+  :root {
+    --primary-font: 'Lobster Two';
+}
+
+  body {
+    background-image: url("../images/weather_background.jpeg");
+    background-position: center;
+    background-size: cover;
+    font-family: var(--primary-font);
+  }
+
 header {
     margin-bottom: 10px;
 }
 
-#uvi {
-    background-color: rgb(150, 150, 165);
+h2, .five-day-forecast-label  {
+    color: white;
 }
 
-h3 {
-    font-weight: bold;
-    font-size: 20px;
+.low {
+    background-color: green;
 }
 
-/* h6 {
-    font-weight: bold;
-} */
-/* .footer {
-    padding: 30px;
-    text-align: center;
-    font-size: 20px;
-    background-color: aqua;
-  } */
+.moderate {
+    background-color: yellow;
+}
+
+.high {
+    background-color: orange;
+}
+
+.very-high {
+    background-color: red;
+}
+
+.main-icon-img {
+    width: 250px;
+    height: 250px;
+}
+
+.card {
+    opacity: 0.7;
+}
+
+.icon-img {
+    width: 100px;
+    height: 100px;
+}
